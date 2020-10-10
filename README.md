@@ -1,6 +1,6 @@
 # Learning Group Structure and Disentangled Representations of Dynamical Environments
 
-This folder contains notebooks that can be used to reproduce the experiments in our paper "Learning Disentangled Representations and Group Structure of Dynamical Environments"
+This folder contains notebooks that can be used to reproduce the experiments in our paper "Learning Disentangled Representations and Group Structure of Dynamical Environments", which was accepted to NeurIPS 2020. You can find the ArXiv version of our paper <a href="https://arxiv.org/abs/2002.06991">here</a>.
 
 # Requirements
 
