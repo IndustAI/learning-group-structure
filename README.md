@@ -1,6 +1,14 @@
 # Learning Group Structure and Disentangled Representations of Dynamical Environments
 
-This folder contains notebooks that can be used to reproduce the experiments in our paper "Learning Disentangled Representations and Group Structure of Dynamical Environments", which was accepted to NeurIPS 2020. You can find the ArXiv version of our paper <a href="https://arxiv.org/abs/2002.06991">here</a>.
+This repository is the official supporting code for the paper "Learning Disentangled Representations and Group Structure of Dynamical Environments", which was accepted to NeurIPS 2020. You can find the ArXiv version of the paper <a href="https://arxiv.org/abs/2002.06991">here</a>.
+
+The code is structured in notebook form, where each notebook is used to reproduce the experiments described in our paper and produce the plots shown in our paper. The notebooks are named after the figure that they are used in; for example, fig2_flatland generates plots used in figure 2. 
+
+### Overview 
+
+We consider representation learning of dynamical environments to be the task of learning: (i) to encode static observations (i.e. images) in a latent space and (ii) how actions evolve this latent representation such that it remains faithful to the ground-truth in the observation space. Our approach, as formalised in our paper, is to use spherical latent spaces (where observations are encoded as unit-norm n-dimensional vectors) and represent actions as unitary (i.e. norm-preserving) rotations.
+
+Moreover, we aim to find not just a faithful representation of the environment, but a disentangled representation as defined by <a href="https://arxiv.org/abs/1812.02230">Higgins et al. (2018)</a>. At a high level, a disentangled representation is one where the generative factors of the environment (for example translations and rotations in a 3D world) can be independently identified and modified in the latent space encoding. Our work proposes a regularisation that, when applied to the learned representations of actions, encourages this disentanglement.
 
 # Requirements
 
@@ -18,15 +26,13 @@ and finally install Pymunk:
 
 # Running experiments
 
-All experiments in our paper can be reproduced by running the notebooks in this folder. The notebooks are named after the figure that they are used in; for example, fig2_flatland generates plots used in figure 2. 
+All experiments in our paper can be reproduced by running the notebooks in this folder. Note: fig3_flatland and fig2_flatland are identical, since the same notebook produces results used in both figures.
 
-Note: fig3_flatland and fig2_flatland are identical, since the same notebook produces results used in both figures.
-
-# Where should I start?
+### Where should I start?
 
 We recommend starting with the fig2_flatland notebook, which includes a detailed walkthrough of what the code does in relation with our theory.
 
-# Data and pre-trained models
+### Data and pre-trained models
 
 We provide all raw test results and pre-trained models used for figure 6, which are located in src/flatland/flat_game/results. Figure 6 can be obtained by running the fig6_createplot notebook, which loads all the test results and plots them with the appropriate confidence interval.
 
