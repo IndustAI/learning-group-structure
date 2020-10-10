@@ -12,7 +12,7 @@ Moreover, we aim to find not just a faithful representation of the environment, 
 
 # Requirements
 
-Our code runs using Python 3. In addition to standard packages found in most python distributions (numpy, matplotlib, etc.), this code requires pytorch (for neural network training) and Pygame (for Flatland). To install pygame, first install its dependencies with:
+Our code requires Python 3 and Jupyter Notebook. In addition to standard packages found in most python distributions (numpy, matplotlib, etc.), this code requires pytorch (for neural network training) and Pygame (for Flatland). To install pygame, first install its dependencies with:
 
 `sudo apt install mercurial libfreetype6-dev libsdl-dev libsdl-image1.2-dev libsdl-ttf2.0-dev libsmpeg-dev libportmidi-dev libavformat-dev libsdl-mixer1.2-dev libswscale-dev libjpeg-dev`
 
@@ -26,11 +26,11 @@ and finally install Pymunk:
 
 # Running experiments
 
-All experiments in our paper can be reproduced by running the notebooks in this folder. Note: fig3_flatland and fig2_flatland are identical, since the same notebook produces results used in both figures.
+All experiments in our paper can be reproduced by running the notebooks in this repository. Please note that fig3_flatland and fig2_flatland are identical, since the same notebook produces results used in both figures.
 
 ### Where should I start?
 
-We recommend starting with the fig2_flatland notebook, which includes a detailed walkthrough of what the code does in relation with our theory.
+We recommend starting with the fig2_flatland notebook, which includes a detailed walkthrough of what the code does in relation with our paper.
 
 ### Data and pre-trained models
 
