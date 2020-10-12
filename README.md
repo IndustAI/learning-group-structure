@@ -39,3 +39,7 @@ We provide all raw test results and pre-trained models used for figure 6, which 
 We do not provide pre-trained models used for the other figures, since the notebooks are mostly self-contained and train and test models in a relatively short time. In particular, our results shown in figures 2 and 3 for Flatland and the gridworld can be reproduced in roughly 10 minutes on a laptop. Results for figures 4 and 5 take about 30 minutes to an hour to reproduce.
 
 Data for the experiment shown in figure 4 can be generated automatically by running the teapot notebook and setting CREATE_DATASET to True. The data will then be saved in the teapot folder.
+
+### Experiments in the Supplementary Information
+
+Code to reproduce the experiments on the 3DCars and 3DShapes datasets presented in the supplementary information can be found at <a href="https://github.com/tomdbar/dynamical-disentanglement">this github repo</a>.
